@@ -704,6 +704,8 @@
   display: none; }
 
 .revi-polic__label {
+  width: 27px;
+  height: 17px;
   position: relative; }
 
 .review-no-check[type="checkbox"] + span {
@@ -719,7 +721,8 @@
   background: url(../img/cubenk.png) no-repeat; }
 
 .review-police__page-link {
-  margin-left: 26px; }
+  text-align: left;
+  margin-left: 3px; }
 
 /*sprite with stars */
 #reviewStars-input input:checked ~ label, #reviewStars-input label, #reviewStars-input label:hover, #reviewStars-input label:hover ~ label {
@@ -840,4 +843,4 @@
     font-size: 14px; }
 
   .review-police__page-link {
-    margin-left: 10px; } }
+    margin-left: 5px; } }
