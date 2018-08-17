@@ -249,7 +249,7 @@
       .form-input
         outline: 0
         height: 50px
-        padding: 5px 0px
+        padding: 2px 0px
         border: none
         width: 247px
         padding-left: 2px
@@ -407,7 +407,10 @@
     right: -20px
 .review-leave
     background: #fff
-    padding: 30px 45px
+    padding: 30px 0px
+    padding-top: 28px
+    padding-left: 70px
+    padding-right: 70px
 .review-leave__header
     font-family: 'Roboto', sans-serif
     font-weight: 500
@@ -419,33 +422,39 @@
     font-size: 14px
     line-height: 18px
     margin-top: 10px
-    margin-left: 2px
+    // margin-left: 2px
+.offer-rev-first
+  margin-top: 5px
 .offer-rev-first, .offer-rev-sec, .offer-rev-third, .offer-rev-four
     display: flex
     align-items: center
-    margin-top: 10px
+    margin-top: 0px
     // justify-content: space-between
 .offer-rev-four
-    margin-bottom: 20px
+    margin-bottom: 12px
+    margin-top: 3px
 .review-mark
     text-align: left
     display: flex
     align-items: center
     p
-      margin-left: 25px
+      // margin-left: 25px
       margin-top: 10px
 .offer-rev-first__write
     text-align: left
-    margin-left: 27px
+    // margin-top: -15px
+    // margin-left: 27px
     p
         font-family: 'Roboto', sans-serif
         font-weight: 300
         font-size: 16px
+        margin-top: -5px
+
 
 .review-select, .review-input, .review-textarea
     width: 360px
     outline: 0
-    margin-right: 30px
+    margin-right: 35px
     font-family: 'Roboto', sans-serif
     font-weight: 300
     border: 0
@@ -458,6 +467,13 @@
     font-family: 'Roboto', sans-serif
     font-weight: 400
     font-size: 12px
+.offer-rev-sec__pseudo
+  margin-top: -15px
+.offer-rev-first__operat
+  p
+    margin-top: 8px
+.offer-rev-sec
+  margin-top: -6px
 .form-item
     display: inline-block
     vertical-align: top
@@ -468,14 +484,15 @@
 .form-input
     outline: 0
     height: 50px
-    padding: 5px 0px
+    padding: 3px 0px
+    padding-top: 8px 
 
 
 .form-label
     position: absolute
     pointer-events: none
     left: 0px
-    top: 0px
+    top: 5px
     line-height: 40px
     transition: .3s
 
@@ -483,7 +500,7 @@
     border-bottom: 3px solid #038057
 .form-input:focus~.form-label,
 .form-input:not(:focus):valid~.form-label
-    top: -15px
+    top: -10px
     font-size: 14px
 
 
@@ -506,8 +523,8 @@
     padding: 0 8px
     font-size: 18px
     position: absolute
-    right: 15px
-    top: 7px
+    right: 14px
+    top: 12px
     color: #333333
     z-index: 1
     text-align: center
@@ -521,13 +538,14 @@
     -webkit-appearance: none
     -moz-appearance: none
     appearance: none
-    // padding-bottom: 10px
-    height: 50px
+    // padding-bottom: 2px
+    padding-top: 5px
+    height: 45px
 
 .review-police
     display: flex
     // align-items: center
-    margin-bottom: 20px
+    margin-bottom: 10px
 
     a
         text-decoration: underline
@@ -562,7 +580,7 @@
 .review-no-check[type="checkbox"]:checked + span
     background: url(../img/cubenk.png) no-repeat
 .review-police__page-link
-    margin-left: 35px
+    margin-left: 26px
 
 
 /*sprite with stars*/
@@ -636,7 +654,7 @@
 
 .star-rating
   font-size: 0
-  margin-left: 30px
+  margin-left: 35px
 
 .star-rating__wrap
   display: inline-block
@@ -648,7 +666,7 @@
   clear: both
 
 .star-rating__ico
-  margin-left: 4px
+  margin-left: 3px
   float: right
   padding-left: 2px
   cursor: pointer
