@@ -17,4 +17,10 @@ $( document ).ready(function() {
     $('.reviews__review__comments__show-comments').click(function () {
         $(this).parent().parent().siblings('.reviews__review_subcomments').toggleClass('reviews__review_subcomments-visible');
     });
+    $('.reviews__review__comments__comment__text').click(function () {
+        $(this).parent().parent().parent().siblings('.reviews__review__comment-answer').toggleClass('reviews__review__comment-answer_hidden');
+    })
+
+
+
 });
