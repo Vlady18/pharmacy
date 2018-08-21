@@ -1,5 +1,7 @@
 *
   box-sizing: border-box
+body
+    font-family: 'Roboto', sans-serif
 .reviews__review__comment-answer_hidden
     display: none
 #overlay
@@ -26,6 +28,13 @@
   margin: 0 auto
 .ad__first-ad
   margin-bottom: 30px
+  img
+    max-width: 271px
+    max-height: 386px
+.ad__second-ad
+  img
+    max-width: 271px
+    max-height: 386px
 .reviews
   .reviews__summary
     .reviews__summary__top
@@ -40,6 +49,8 @@
         .reviews__summary__top__star
           width: 167px
           height: 26px
+          max-width: 167px
+          max-height: 26px
           margin-right: 17px
         .reviews__summary__top__num
           margin-bottom: 0
@@ -104,6 +115,8 @@
         .reviews__review__info__rate
           width: 128.42px
           height: 20px
+          max-width: 128.42px
+          max-height: 20px
       .reviews__review__info__date
         font-family: 'Roboto', sans-serif
         font-size: 13.8084px
@@ -115,7 +128,7 @@
     .reviews__review__content
       margin-top: 16px
       margin-left: 2px
-      .reviews__review__content__content-text
+      p
         font-family: 'Roboto', sans-serif
         line-height: 22px
         font-size: 14px
@@ -135,6 +148,7 @@
           margin-right: 30px
           p
             margin-bottom: 0px
+            border-bottom: 1px dashed black
         .reviews__review__comments__comment
           cursor: pointer
           margin-left: 3px
@@ -143,13 +157,15 @@
           color: #4F4F4F
           display: flex
           margin-bottom: 0px
+          p
+            border-bottom: 1px dashed black
           .reviews__review__comments__comment__image
             width: 20px
             height: 21px
             margin-right: 10px
       .reviews__review__comments__right-part
         display: flex
-        margin-right: -22px
+        margin-right: -16px
         .reviews__review__comments__quest
           font-family: Roboto
           font-size: 13.8084px
@@ -161,11 +177,14 @@
           color: #4F4F4F
           display: flex
           margin-left: 30px
+          &:hover
+            .reviews__review__comments__btn-like__image
+              color: green
           p
             margin-left: 7px
           .reviews__review__comments__btn-like__image
-            width: 17.86px
-            height: 17.14px
+            font-size: 19px
+            color: darkgray
         .reviews__review__comments__btn-dislike
           cursor: pointer
           font-family: Roboto
@@ -173,11 +192,14 @@
           color: #4F4F4F
           display: flex
           margin-left: 30px
+          &:hover
+            .reviews__review__comments__btn-dislike__image
+              color: red
           p
             margin-left: 7px
           .reviews__review__comments__btn-dislike__image
-            width: 17.86px
-            height: 17.14px
+            font-size: 19px
+            color: darkgray
 .reviews__review_subcomments
   margin-left: 30px
   display: none
@@ -197,12 +219,14 @@
       margin-right: -23px
       color: #4F4F4F
   .reviews__review_subcomments__content
-    font-family: 'Roboto', sans-serif
-    line-height: 20px
-    font-size: 14px
-    color: #333333
-    margin-top: 3px
-    margin-left: 1px
+    p
+      font-family: 'Roboto', sans-serif
+      line-height: 20px
+      font-size: 14px
+      color: #333333
+      margin-top: 3px
+      margin-left: 1px
+      margin-bottom: 0px
   .reviews__review_subcomments__answ
     font-family: 'Roboto', sans-serif
     font-size: 13.8084px
@@ -220,6 +244,7 @@
   height: 1px
   margin-bottom:  10px
 .reviews__review__comment-answer
+  margin-bottom: 49px
   .wrap
     margin-left: 30px
     display: flex
@@ -236,10 +261,14 @@
       line-height: 17px
       font-size: 16px
       color: #4F4F4F
+      margin-bottom: 10px
     form
       display: flex
       justify-content: space-between
-      margin-top: 12px
+      flex-direction: column
+      margin-bottom: 8px
+      .form-wrap
+        display: flex
       .form-item
         display: inline-block
         vertical-align: top
@@ -307,6 +336,8 @@
       color: #333333
       img
         margin-right: 10px
+        max-width: 9px
+        max-height: 9px
 .page-navig
     margin-top: 20px
     margin-bottom: 50px
@@ -317,6 +348,9 @@
     &__list
         list-style: none
         margin-right: 15px
+        &:hover
+          a
+            color: #038057
     &:last-child
         margin-right: 0
     a
@@ -332,6 +366,9 @@
     font-size: 15px!important
   .reviews__summary__top__all-buyers
     font-size: 12px!important
+@media all and (max-width: 990px)
+  .ad
+    display: none
 @media all and (max-width: 770px)
   .page-name
     font-size: 25px
@@ -485,7 +522,7 @@
     outline: 0
     height: 50px
     padding: 3px 0px
-    padding-top: 8px 
+    padding-top: 8px
 
 
 .form-label

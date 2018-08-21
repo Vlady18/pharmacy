@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" href="css/main.css">
-    <title>Reviews</title>
+    <title>Отзывы</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
   </head>
   <body>
       <div id="overlay"></div>
@@ -68,23 +69,25 @@
                   <div class="reviews__review__comments__right-part">
                     <div class="reviews__review__comments__quest">Отзыв полезен?</div>
                     <div class="reviews__review__comments__btn-like">
-                      <img src="img/like.png" alt="" class="reviews__review__comments__btn-like__image">
+                      <i class="fa fa-thumbs-up reviews__review__comments__btn-like__image" aria-hidden="true" ></i>
                       <p>123</p>
                     </div>
                     <div class="reviews__review__comments__btn-dislike">
-                      <img src="img/dislike.png" alt="" class="reviews__review__comments__btn-dislike__image">
+                      <i class="fa fa-thumbs-down reviews__review__comments__btn-dislike__image" aria-hidden="true"></i>
                       <P>3</P>
                     </div>
                   </div>
               </div>
-              <div class="horisontal_line"></div>
+              <div class="horisontal_line horisontal_line2"></div>
               <div class="reviews__review_subcomments ">
                 <div class="reviews__review_subcomments__info">
                   <div class="reviews__review_subcomments__info__name">Андрей Смирнов</div>
                   <div class="reviews__review_subcomments__info__date">20.05.18</div>
                 </div>
                 <div class="reviews__review_subcomments__content">
-                  Перед применением рекомендуется проконсультироваться с врачом.По данным доклинического и клинического изучения, Промисан хорошо переносится, не оказывая в терапевтических дозах побочных эффектов
+                  <p>
+                    Перед применением рекомендуется проконсультироваться с врачом.По данным доклинического и клинического изучения, Промисан хорошо переносится, не оказывая в терапевтических дозах побочных эффектов
+                  </p>
                 </div>
                 <div class="reviews__review_subcomments__answ">
                   Ответить
@@ -97,7 +100,10 @@
                   <div class="reviews__review_subcomments__info__date">20.05.18</div>
                 </div>
                 <div class="reviews__review_subcomments__content">
-                  <b>Андрей Смирнов</b>, Перед применением рекомендуется проконсультироваться с врачом.По данным доклинического и клинического изучения, Промисан хорошо переносится, не оказывая в терапевтических дозах побочных эффектов</div>
+                  <p>
+                    <b>Андрей Смирнов</b>, Перед применением рекомендуется проконсультироваться с врачом.По данным доклинического и клинического изучения, Промисан хорошо переносится, не оказывая в терапевтических дозах побочных эффектов
+                  </p>
+                </div>
                 <div class="reviews__review_subcomments__answ">
                   Ответить
                 </div>
@@ -106,15 +112,118 @@
               <div class="reviews__review__comment-answer reviews__review__comment-answer_hidden">
                 <div class="wrap">
                   <div class="reviews__review__comment-answer_left-part">
-                  <textarea  rows="6" cols="80"></textarea>
-                  <form>
-                    <div class="form-item">
-                      <input type="text" class="form-input review-input" required>
-                      <label class="form-label">Имя</label>
+                    <form>
+                      <textarea  rows="6" cols="80"></textarea>
+                      <div class="form-wrap">
+                        <div class="form-item">
+                          <input type="text" class="form-input review-input" required name="" value="">
+                          <label class="form-label">Имя</label>
+                        </div>
+                        <div class="form-item">
+                          <input type="text" class="form-input review-input" required name="" value="">
+                          <label class="form-label">Email</label>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="reviews__review__comment-answer_right-part">
+                    <p>Комментарии публикуются после проверки модератор. Если вы оскорбили собеседника, использовали ненормативную лексику или указали ссылку на другой сайт, то комментарий не будет опубликован
+                    </p>
+                    <p>Email нужен для отслеживания статуса
+  публикации и комментариях</p>
+                  </div>
+                </div>
+                <div class="close-btns">
+                  <div class="reviews__review__comment__send-btn">
+                    Отправить отзыв
+                  </div>
+                  <div class="reviews__review__comment__close-form-btn">
+                    <img src="img/red_x.png" alt="">
+                    Закрыть форму
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__review">
+              <div class="reviews__review__info">
+                <div class="reviews__review__info__wrap">
+                  <p class="reviews__review__info__name">Мария Степановна</p>
+                  <img src="img/favourites-filled-star-symbol.png" alt="" class="reviews__review__info__rate">
+                </div>
+                <div class="reviews__review__info__date">
+                  Москва 24.05.2018
+                </div>
+              </div>
+              <div class="reviews__review__content">
+                <p class="reviews__review__content__content-text">
+                  Наши партнёры крупные производители и поставщики с многолетней репутацией, поэтому мы предлагаем только зарегистрированные и сертифицированные товары, тщательно соблюдая все условия хранения и транспортировки.
+                </p>
+              </div>
+              <div class="reviews__review__comments">
+                <div class="reviews__review__comments__left-part">
+                  <div class="reviews__review__comments__show-comments"><p>Показать 2 комментария</p></div>
+                  <div class="reviews__review__comments__comment">
+                    <img src="img/cloud.png" alt="" class="reviews__review__comments__comment__image">
+                    <p class="reviews__review__comments__comment__text">Комментировать</p>
+                  </div>
+                </div>
+                  <div class="reviews__review__comments__right-part">
+                    <div class="reviews__review__comments__quest">Отзыв полезен?</div>
+                    <div class="reviews__review__comments__btn-like">
+                      <i class="fa fa-thumbs-up reviews__review__comments__btn-like__image" aria-hidden="true" ></i>
+                      <p>123</p>
                     </div>
-                    <div class="form-item">
-                      <input type="text" class="form-input review-input" required>
-                      <label class="form-label">Email</label>
+                    <div class="reviews__review__comments__btn-dislike">
+                      <i class="fa fa-thumbs-down reviews__review__comments__btn-dislike__image" aria-hidden="true"></i>
+                      <P>3</P>
+                    </div>
+                  </div>
+              </div>
+              <div class="horisontal_line"></div>
+              <div class="reviews__review_subcomments ">
+                <div class="reviews__review_subcomments__info">
+                  <div class="reviews__review_subcomments__info__name">Андрей Смирнов</div>
+                  <div class="reviews__review_subcomments__info__date">20.05.18</div>
+                </div>
+                <div class="reviews__review_subcomments__content">
+                  <p>
+                    Перед применением рекомендуется проконсультироваться с врачом.По данным доклинического и клинического изучения, Промисан хорошо переносится, не оказывая в терапевтических дозах побочных эффектов
+                  </p>
+                </div>
+                <div class="reviews__review_subcomments__answ">
+                  Ответить
+                </div>
+                <div class="horisontal_line horisontal_line3"></div>
+              </div>
+              <div class="reviews__review_subcomments ">
+                <div class="reviews__review_subcomments__info">
+                  <div class="reviews__review_subcomments__info__name">Василий Иванченео</div>
+                  <div class="reviews__review_subcomments__info__date">20.05.18</div>
+                </div>
+                <div class="reviews__review_subcomments__content">
+                  <p>
+                    <b>Андрей Смирнов</b>, Перед применением рекомендуется проконсультироваться с врачом.По данным доклинического и клинического изучения, Промисан хорошо переносится, не оказывая в терапевтических дозах побочных эффектов
+                  </p>
+                </div>
+                <div class="reviews__review_subcomments__answ">
+                  Ответить
+                </div>
+                <div class="horisontal_line horisontal_line3"></div>
+              </div>
+              <div class="reviews__review__comment-answer reviews__review__comment-answer_hidden">
+                <div class="wrap">
+                  <div class="reviews__review__comment-answer_left-part">
+                  <form>
+                    <textarea  rows="6" cols="80"></textarea>
+                    <div class="form-wrap">
+                      <div class="form-item">
+                        <input type="text" class="form-input review-input" required name="" value="">
+                        <label class="form-label">Имя</label>
+                      </div>
+                      <div class="form-item">
+                        <input type="text" class="form-input review-input" required name="" value="">
+                        <label class="form-label">Email</label>
+                      </div>
                     </div>
                   </form>
                   </div>
@@ -162,23 +271,25 @@
                   <div class="reviews__review__comments__right-part">
                     <div class="reviews__review__comments__quest">Отзыв полезен?</div>
                     <div class="reviews__review__comments__btn-like">
-                      <img src="img/like.png" alt="" class="reviews__review__comments__btn-like__image">
+                      <i class="fa fa-thumbs-up reviews__review__comments__btn-like__image" aria-hidden="true" ></i>
                       <p>123</p>
                     </div>
                     <div class="reviews__review__comments__btn-dislike">
-                      <img src="img/dislike.png" alt="" class="reviews__review__comments__btn-dislike__image">
+                      <i class="fa fa-thumbs-down reviews__review__comments__btn-dislike__image" aria-hidden="true"></i>
                       <P>3</P>
                     </div>
                   </div>
               </div>
-              <div class="horisontal_line"></div>
+              <div class="horisontal_line horisontal_line2"></div>
               <div class="reviews__review_subcomments ">
                 <div class="reviews__review_subcomments__info">
                   <div class="reviews__review_subcomments__info__name">Андрей Смирнов</div>
                   <div class="reviews__review_subcomments__info__date">20.05.18</div>
                 </div>
                 <div class="reviews__review_subcomments__content">
-                  Перед применением рекомендуется проконсультироваться с врачом.По данным доклинического и клинического изучения, Промисан хорошо переносится, не оказывая в терапевтических дозах побочных эффектов
+                  <p>
+                    Перед применением рекомендуется проконсультироваться с врачом.По данным доклинического и клинического изучения, Промисан хорошо переносится, не оказывая в терапевтических дозах побочных эффектов
+                  </p>
                 </div>
                 <div class="reviews__review_subcomments__answ">
                   Ответить
@@ -191,7 +302,10 @@
                   <div class="reviews__review_subcomments__info__date">20.05.18</div>
                 </div>
                 <div class="reviews__review_subcomments__content">
-                  <b>Андрей Смирнов</b>, Перед применением рекомендуется проконсультироваться с врачом.По данным доклинического и клинического изучения, Промисан хорошо переносится, не оказывая в терапевтических дозах побочных эффектов</div>
+                  <p>
+                    <b>Андрей Смирнов</b>, Перед применением рекомендуется проконсультироваться с врачом.По данным доклинического и клинического изучения, Промисан хорошо переносится, не оказывая в терапевтических дозах побочных эффектов
+                  </p>
+                </div>
                 <div class="reviews__review_subcomments__answ">
                   Ответить
                 </div>
@@ -200,17 +314,19 @@
               <div class="reviews__review__comment-answer reviews__review__comment-answer_hidden">
                 <div class="wrap">
                   <div class="reviews__review__comment-answer_left-part">
-                  <textarea  rows="6" cols="80"></textarea>
-                  <form>
-                    <div class="form-item">
-                      <input type="text" class="form-input review-input" required>
-                      <label class="form-label">Имя</label>
-                    </div>
-                    <div class="form-item">
-                      <input type="text" class="form-input review-input" required>
-                      <label class="form-label">Email</label>
-                    </div>
-                  </form>
+                    <form>
+                      <textarea  rows="6" cols="80"></textarea>
+                      <div class="form-wrap">
+                        <div class="form-item">
+                          <input type="text" class="form-input review-input" required name="" value="">
+                          <label class="form-label">Имя</label>
+                        </div>
+                        <div class="form-item">
+                          <input type="text" class="form-input review-input" required name="" value="">
+                          <label class="form-label">Email</label>
+                        </div>
+                      </div>
+                    </form>
                   </div>
                   <div class="reviews__review__comment-answer_right-part">
                     <p>Комментарии публикуются после проверки модератор. Если вы оскорбили собеседника, использовали ненормативную лексику или указали ссылку на другой сайт, то комментарий не будет опубликован
@@ -256,23 +372,26 @@
                   <div class="reviews__review__comments__right-part">
                     <div class="reviews__review__comments__quest">Отзыв полезен?</div>
                     <div class="reviews__review__comments__btn-like">
-                      <img src="img/like.png" alt="" class="reviews__review__comments__btn-like__image">
+                      <i class="fa fa-thumbs-up reviews__review__comments__btn-like__image" aria-hidden="true" ></i>
                       <p>123</p>
                     </div>
                     <div class="reviews__review__comments__btn-dislike">
-                      <img src="img/dislike.png" alt="" class="reviews__review__comments__btn-dislike__image">
+                      <i class="fa fa-thumbs-down reviews__review__comments__btn-dislike__image" aria-hidden="true"></i>
                       <P>3</P>
                     </div>
                   </div>
               </div>
-              <div class="horisontal_line"></div>
+              <div class="horisontal_line horisontal_line2"></div>
               <div class="reviews__review_subcomments ">
                 <div class="reviews__review_subcomments__info">
                   <div class="reviews__review_subcomments__info__name">Андрей Смирнов</div>
                   <div class="reviews__review_subcomments__info__date">20.05.18</div>
                 </div>
                 <div class="reviews__review_subcomments__content">
-                  Перед применением рекомендуется проконсультироваться с врачом.По данным доклинического и клинического изучения, Промисан хорошо переносится, не оказывая в терапевтических дозах побочных эффектов
+                  <p>
+
+                    Перед применением рекомендуется проконсультироваться с врачом.По данным доклинического и клинического изучения, Промисан хорошо переносится, не оказывая в терапевтических дозах побочных эффектов
+                  </p>
                 </div>
                 <div class="reviews__review_subcomments__answ">
                   Ответить
@@ -285,7 +404,10 @@
                   <div class="reviews__review_subcomments__info__date">20.05.18</div>
                 </div>
                 <div class="reviews__review_subcomments__content">
-                  <b>Андрей Смирнов</b>, Перед применением рекомендуется проконсультироваться с врачом.По данным доклинического и клинического изучения, Промисан хорошо переносится, не оказывая в терапевтических дозах побочных эффектов</div>
+                  <p>
+                    <b>Андрей Смирнов</b>, Перед применением рекомендуется проконсультироваться с врачом.По данным доклинического и клинического изучения, Промисан хорошо переносится, не оказывая в терапевтических дозах побочных эффектов
+                  </p>
+                </div>
                 <div class="reviews__review_subcomments__answ">
                   Ответить
                 </div>
@@ -294,111 +416,19 @@
               <div class="reviews__review__comment-answer reviews__review__comment-answer_hidden">
                 <div class="wrap">
                   <div class="reviews__review__comment-answer_left-part">
-                  <textarea  rows="6" cols="80"></textarea>
-                  <form>
-                    <div class="form-item">
-                      <input type="text" class="form-input review-input" required>
-                      <label class="form-label">Имя</label>
-                    </div>
-                    <div class="form-item">
-                      <input type="text" class="form-input review-input" required>
-                      <label class="form-label">Email</label>
-                    </div>
-                  </form>
-                  </div>
-                  <div class="reviews__review__comment-answer_right-part">
-                    <p>Комментарии публикуются после проверки модератор. Если вы оскорбили собеседника, использовали ненормативную лексику или указали ссылку на другой сайт, то комментарий не будет опубликован
-                    </p>
-                    <p>Email нужен для отслеживания статуса
-  публикации и комментариях</p>
-                  </div>
-                </div>
-                <div class="close-btns">
-                  <div class="reviews__review__comment__send-btn">
-                    Отправить отзыв
-                  </div>
-                  <div class="reviews__review__comment__close-form-btn">
-                    <img src="img/red_x.png" alt="">
-                    Закрыть форму
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="reviews__review">
-              <div class="reviews__review__info">
-                <div class="reviews__review__info__wrap">
-                  <p class="reviews__review__info__name">Мария Степановна</p>
-                  <img src="img/favourites-filled-star-symbol.png" alt="" class="reviews__review__info__rate">
-                </div>
-                <div class="reviews__review__info__date">
-                  Москва 24.05.2018
-                </div>
-              </div>
-              <div class="reviews__review__content">
-                <p class="reviews__review__content__content-text">
-                  Наши партнёры крупные производители и поставщики с многолетней репутацией, поэтому мы предлагаем только зарегистрированные и сертифицированные товары, тщательно соблюдая все условия хранения и транспортировки.
-                </p>
-              </div>
-              <div class="reviews__review__comments">
-                <div class="reviews__review__comments__left-part">
-                  <div class="reviews__review__comments__show-comments"><p>Показать 2 комментария</p></div>
-                  <div class="reviews__review__comments__comment">
-                    <img src="img/cloud.png" alt="" class="reviews__review__comments__comment__image">
-                    <p class="reviews__review__comments__comment__text">Комментировать</p>
-                  </div>
-                </div>
-                  <div class="reviews__review__comments__right-part">
-                    <div class="reviews__review__comments__quest">Отзыв полезен?</div>
-                    <div class="reviews__review__comments__btn-like">
-                      <img src="img/like.png" alt="" class="reviews__review__comments__btn-like__image">
-                      <p>123</p>
-                    </div>
-                    <div class="reviews__review__comments__btn-dislike">
-                      <img src="img/dislike.png" alt="" class="reviews__review__comments__btn-dislike__image">
-                      <P>3</P>
-                    </div>
-                  </div>
-              </div>
-              <div class="horisontal_line"></div>
-              <div class="reviews__review_subcomments ">
-                <div class="reviews__review_subcomments__info">
-                  <div class="reviews__review_subcomments__info__name">Андрей Смирнов</div>
-                  <div class="reviews__review_subcomments__info__date">20.05.18</div>
-                </div>
-                <div class="reviews__review_subcomments__content">
-                  Перед применением рекомендуется проконсультироваться с врачом.По данным доклинического и клинического изучения, Промисан хорошо переносится, не оказывая в терапевтических дозах побочных эффектов
-                </div>
-                <div class="reviews__review_subcomments__answ">
-                  Ответить
-                </div>
-                <div class="horisontal_line horisontal_line3"></div>
-              </div>
-              <div class="reviews__review_subcomments ">
-                <div class="reviews__review_subcomments__info">
-                  <div class="reviews__review_subcomments__info__name">Василий Иванченео</div>
-                  <div class="reviews__review_subcomments__info__date">20.05.18</div>
-                </div>
-                <div class="reviews__review_subcomments__content">
-                  <b>Андрей Смирнов</b>, Перед применением рекомендуется проконсультироваться с врачом.По данным доклинического и клинического изучения, Промисан хорошо переносится, не оказывая в терапевтических дозах побочных эффектов</div>
-                <div class="reviews__review_subcomments__answ">
-                  Ответить
-                </div>
-                <div class="horisontal_line horisontal_line3"></div>
-              </div>
-              <div class="reviews__review__comment-answer reviews__review__comment-answer_hidden">
-                <div class="wrap">
-                  <div class="reviews__review__comment-answer_left-part">
-                  <textarea  rows="6" cols="80"></textarea>
-                  <form>
-                    <div class="form-item">
-                      <input type="text" class="form-input review-input" required>
-                      <label class="form-label">Имя</label>
-                    </div>
-                    <div class="form-item">
-                      <input type="text" class="form-input review-input" required>
-                      <label class="form-label">Email</label>
-                    </div>
-                  </form>
+                    <form>
+                      <textarea  rows="6" cols="80"></textarea>
+                      <div class="form-wrap">
+                        <div class="form-item">
+                          <input type="text" class="form-input review-input" required name="" value="">
+                          <label class="form-label">Имя</label>
+                        </div>
+                        <div class="form-item">
+                          <input type="text" class="form-input review-input" required name="" value="">
+                          <label class="form-label">Email</label>
+                        </div>
+                      </div>
+                    </form>
                   </div>
                   <div class="reviews__review__comment-answer_right-part">
                     <p>Комментарии публикуются после проверки модератор. Если вы оскорбили собеседника, использовали ненормативную лексику или указали ссылку на другой сайт, то комментарий не будет опубликован
@@ -485,7 +515,7 @@
          <div class="offer-rev-sec">
            <div class="offer-rev-sec__name">
               <div class="form-item">
-                <input type="text" class="form-input review-input" required>
+                <input type="text" class="form-input review-input" required name="" value="">
                 <label class="form-label">Имя или псевдоним</label>
               </div>
            </div>
@@ -494,7 +524,7 @@
          <div class="offer-rev-third">
            <div class="offer-rev-third__tel">
               <div class="form-item">
-                <input type="text" class="form-input review-input" required>
+                <input type="text" class="form-input review-input" required name="" value="">
                 <label class="form-label">Телефон</label>
               </div>
            </div>
@@ -523,7 +553,7 @@
      </div>
     </div>
     <!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
