@@ -44,7 +44,7 @@ section .about-menu__list {
     font-style: normal;
     font-size: 16px;
     font-family: "Roboto", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: #000000;
     text-decoration: none; }
     section .about-menu__list a:hover {
@@ -147,7 +147,7 @@ section .vacan-list-info {
     line-height: 23px; }
   section .vacan-list-info__price, section .vacan-list-info__pract {
     font-family: "Roboto", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 16px; }
     section .vacan-list-info__price span, section .vacan-list-info__price b, section .vacan-list-info__pract span, section .vacan-list-info__pract b {
       font-weight: 500; }
