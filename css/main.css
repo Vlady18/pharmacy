@@ -308,10 +308,11 @@ body {
     display: flex; }
     .reviews__review__comment-answer .wrap textarea {
       width: 524px;
-      height: auto;
+      height: 44px;
       border-top: none;
       border-left: none;
       border-right: none;
+      resize: none;
       outline: none;
       margin-top: 50px;
       font-family: "Roboto", sans-serif;
@@ -319,6 +320,8 @@ body {
       font-size: 16px;
       color: #4F4F4F;
       margin-bottom: 10px; }
+      .reviews__review__comment-answer .wrap textarea:focus {
+        border-bottom: 2px solid #038057; }
     .reviews__review__comment-answer .wrap form {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -346,6 +349,7 @@ body {
         height: 50px;
         padding: 2px 0px;
         border: none;
+        border-bottom: 1px solid #D8D8D8;
         width: 247px;
         padding-left: 2px; }
       .reviews__review__comment-answer .wrap form .form-label {
@@ -357,7 +361,7 @@ body {
         -webkit-transition: 0.3s;
         transition: 0.3s; }
       .reviews__review__comment-answer .wrap form .form-input:focus {
-        border-bottom: 3px solid #038057; }
+        border-bottom: 2px solid #038057; }
       .reviews__review__comment-answer .wrap form .form-input:focus ~ .form-label,
       .reviews__review__comment-answer .wrap form .form-input:not(:focus):valid ~ .form-label {
         top: -15px;
@@ -883,3 +887,5 @@ body {
 
   .review-police__page-link {
     margin-left: 5px; } }
+
+/*# sourceMappingURL=main.css.map */
