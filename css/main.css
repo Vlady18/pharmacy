@@ -308,11 +308,12 @@ body {
     display: flex; }
     .reviews__review__comment-answer .wrap textarea {
       width: 524px;
-      height: 44px;
+      height: 25px;
+      min-height: 25px;
+      max-height: 200px;
       border-top: none;
       border-left: none;
       border-right: none;
-      resize: none;
       outline: none;
       margin-top: 50px;
       font-family: "Roboto", sans-serif;
